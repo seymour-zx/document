@@ -1,0 +1,4 @@
+
+var appnews={init:function(){var links=$('.lf_news>span>a');var lists=$('ul.news_box>li');var _timer;links.mouseover(function(){var i=parseInt(this.innerHTML-1),_this=this;_timer=setTimeout(function(){links.removeClass('on')
+_this.className='on'
+lists.hide();for(var j=i*4;j<i*4+4;j++){lists.eq(j).show();}},0)}).mouseout(function(){clearTimeout(_timer);}).click(function(){return false;})}};appnews.init();
