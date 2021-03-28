@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    overflow-x: hidden; overflow-y: scroll;
+    font: 16px'宋体', -apple-system, 'Times New Roman', sans-serif;
+    background-color: rgba(244,241,237,1);
+    background-image: url(../image/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* justify-items: center; */
+    /* justify-content: center; */
+    /* -webkit-text-size-adjust: 100%; */
+}
