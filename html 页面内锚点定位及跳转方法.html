@@ -3,6 +3,8 @@
 	<head>
 		<title>HTML5_ScrollInToView方法</title>
 		<meta  charset="utf-8">
+		<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+
 		<script type="text/javascript">
 			window.onload = function(){
 				/*
@@ -23,10 +25,12 @@
 				
 				
 				document.querySelector("#roll1").onclick = function(){
-					document.querySelector("#roll_top").scrollIntoView(false);
+					// document.querySelector("#roll_top").scrollIntoView(false);
+					$("#roll_top").parent()[0].scrollIntoView(false);
 				}
 				document.querySelector("#roll2").onclick = function(){
-					document.querySelector("#roll_top").scrollIntoView(true);
+					// document.querySelector("#roll_top").scrollIntoView(true);
+					$("#roll_top").parent()[0].scrollIntoView(true);
 				}
 			}
 		</script> 
@@ -54,13 +58,16 @@
 		<button id="roll1">scrollIntoView(false)</button>
 		<button id="roll2">scrollIntoView(true)</button>
 		<div class="myDiv"></div>
+		<div>
+			<div class="myDiv">爸爸</div>
 		<div id="roll_top">
 			scrollIntoView(ture)元素上边框与视窗顶部齐平
 			<span id="bottom">scrollIntoView(false)元素下边框与视窗底部齐平</span>
 		</div> 
-		<div class="myDiv"></div>
+		<div class="myDiv">爸爸</div>
 
-		<div class="myDiv"></div>
+	</div>
+
 
 	</body>
 </html>
